@@ -138,7 +138,7 @@ body {
         </div>
         
         <div class="pricing-table-footer">
-            <a href="#">Ingresar</a>
+            <a href="http://proyectofinal-bd.herokuapp.com/myApp/clientes.jsp">Ingresar</a>
         </div>
     </div>
     
@@ -156,7 +156,7 @@ body {
         </div>
         
         <div class="pricing-table-footer">
-            <a href="#">Ingresar</a>
+            <a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Ingresar</a>
         </div>
     </div>
     
@@ -174,7 +174,7 @@ body {
         </div>
         
         <div class="pricing-table-footer">
-            <a href="#">Ingresar</a>
+            <a href="http://proyectofinal-bd.herokuapp.com/myApp/personas.jsp">Ingresar</a>
         </div>
     </div>
 </div>
