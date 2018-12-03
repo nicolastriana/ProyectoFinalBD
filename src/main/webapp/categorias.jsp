@@ -156,7 +156,7 @@ body {
         </div>
         
         <div class="pricing-table-footer">
-            <a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Ingresar</a>
+            <a href="http://proyectofinal-bd.herokuapp.com/myApp/tematicas.jsp">Ingresar</a>
         </div>
     </div>
     

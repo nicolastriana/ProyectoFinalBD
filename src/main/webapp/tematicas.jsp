@@ -7572,7 +7572,7 @@ a.badge:focus {
                         <img src="imagenes/trabajosocialfinal.png" alt="Avatar" class="image">
                 </center>  
                 <div class="pricing-table-signup-tiny">
-                  <p><a href="#">Sign Up</a></p>
+                  <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Sign Up</a></p>
                 </div>
             </div>
                 
@@ -7591,7 +7591,7 @@ a.badge:focus {
                         <img src="imagenes/geologiafinal.png" alt="Avatar" class="image">
                 </center>  
                 <div class="pricing-table-signup-small">
-                  <p><a href="#">Sign Up</a></p>
+                  <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Sign Up</a></p>
                 </div>
             </div>
 
@@ -7611,7 +7611,7 @@ a.badge:focus {
                         <img src="imagenes/hidrogeologiafinal.png" alt="Avatar" class="image">
                 </center>
                 <div class="pricing-table-signup-medium">
-                    <p><a href="#">Sign Up</a></p>
+                    <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Sign Up</a></p>
                 </div>
             </div>
 
