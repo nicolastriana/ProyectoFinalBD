@@ -7,7 +7,6 @@ package controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -40,11 +39,9 @@ public class IniciarSesion extends HttpServlet {
         Autenticacion aut = new Autenticacion();
         
         if(aut.autenticacion(usuario, clave)){
-            RequestDispatcher redireccion = request.getRequestDispatcher("categorias.jsp");
-            redireccion.forward(request, response);
+            response.sendRedirect("categorias.jsp");
         }else{
-            RequestDispatcher redireccion = request.getRequestDispatcher("index.jsp");
-            redireccion.forward(request, response);
+            response.sendRedirect("index.jsp");
         }
         
         
