@@ -29,9 +29,6 @@
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>Anna</td>
-        <td>Pitt</td>
       </tr>
     </tbody>
   </table>

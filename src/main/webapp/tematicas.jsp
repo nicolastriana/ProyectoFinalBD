@@ -7630,7 +7630,7 @@ a.badge:focus {
                         <img src="imagenes/geofisicafinal.png" alt="Avatar" class="image">
                 </center>
                 <div class="pricing-table-signup-pro">
-                    <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/tematicas.jsp">Ingresar</a></p>
+                    <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Ingresar</a></p>
                 </div>
             </div>
          </div>
