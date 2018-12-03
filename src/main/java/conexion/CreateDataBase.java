@@ -42,8 +42,8 @@ public static void run(){
                                 "Tematica VARCHAR(250) NOT NULL," +
                                 "Localizacion VARCHAR(250) NOT NULL," +
                                 "Fecha VARCHAR(100) NOT NULL," +
-                                "IDProyecto INTEGER NOT NULL," +
-                                "IDCliente INTEGER NOT NULL," +
+                                "IDProyecto INTEGER NULL," +
+                                "IDCliente INTEGER NULL," +
                                 "PRIMARY KEY(IDInforme)," +
                                 "FOREIGN KEY(IDCliente) REFERENCES Cliente(IDCliente));";
             try {
@@ -55,12 +55,14 @@ public static void run(){
              Logger.getLogger(CreateDataBase.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        String sql_persona = "CREATE TABLE Persona(\n" +
-                                "IDPersona INTEGER NOT NULL,\n" +
-                                "Nombre VARCHAR(250) NOT NULL,\n" +
-                                "Apellido VARCHAR(250) NOT NULL,\n" +
-                                "Profesion VARCHAR(250) NOT NULL,\n" +
-                                "Departamento VARCHAR(50) NOT NULL,\n" +
+        String sql_persona = "CREATE TABLE Persona(" +
+                                "IDPersona INTEGER NOT NULL," +
+                                "Nombre VARCHAR(250) NOT NULL," +
+                                "Apellido VARCHAR(250) NOT NULL," +
+                                "Profesion VARCHAR(250) NOT NULL," +
+                                "Departamento VARCHAR(50) NOT NULL," +
+                                "Usuario VARCHAR(100) NOT NULL," +
+                                "Clave VARCHAR(1000) NOT NULL," +
                                 "PRIMARY KEY(IDPersona));";
             try {
                 connection = Conexion.getConnection();
