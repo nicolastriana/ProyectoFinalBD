@@ -2,19 +2,19 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>IniciarSesion</servlet-name>
-        <servlet-class>Servlet.IniciarSesion</servlet-class>
+        <servlet-class>controlador.IniciarSesion</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ClienteServlet</servlet-name>
-        <servlet-class>Servlet.ClienteServlet</servlet-class>
+        <servlet-class>controlador.ClienteServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>InformeServlet</servlet-name>
-        <servlet-class>Servlet.InformeServlet</servlet-class>
+        <servlet-class>controlador.InformeServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>PersonaServlet</servlet-name>
-        <servlet-class>Servlet.PersonaServlet</servlet-class>
+        <servlet-class>controlador.PersonaServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>IniciarSesion</servlet-name>
