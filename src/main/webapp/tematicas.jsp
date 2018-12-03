@@ -9,7 +9,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<title>Flat Pricing Tables</title>
+<title>Temtaticas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -7572,7 +7572,7 @@ a.badge:focus {
                         <img src="imagenes/trabajosocialfinal.png" alt="Avatar" class="image">
                 </center>  
                 <div class="pricing-table-signup-tiny">
-                  <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Sign Up</a></p>
+                  <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Ingresar</a></p>
                 </div>
             </div>
                 
@@ -7591,7 +7591,7 @@ a.badge:focus {
                         <img src="imagenes/geologiafinal.png" alt="Avatar" class="image">
                 </center>  
                 <div class="pricing-table-signup-small">
-                  <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Sign Up</a></p>
+                  <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Ingresar</a></p>
                 </div>
             </div>
 
@@ -7611,7 +7611,7 @@ a.badge:focus {
                         <img src="imagenes/hidrogeologiafinal.png" alt="Avatar" class="image">
                 </center>
                 <div class="pricing-table-signup-medium">
-                    <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Sign Up</a></p>
+                    <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/informes.jsp">Ingresar</a></p>
                 </div>
             </div>
 
@@ -7630,7 +7630,7 @@ a.badge:focus {
                         <img src="imagenes/geofisicafinal.png" alt="Avatar" class="image">
                 </center>
                 <div class="pricing-table-signup-pro">
-                    <p><a href="#">Sign Up</a></p>
+                    <p><a href="http://proyectofinal-bd.herokuapp.com/myApp/tematicas.jsp">Ingresar</a></p>
                 </div>
             </div>
          </div>
