@@ -34,11 +34,11 @@ public class IniciarSesion extends HttpServlet {
         PrintWriter out = response.getWriter();
         
         String usuario = request.getParameter("usuario");
-        String contraseña = request.getParameter("clave");
+        String clave = request.getParameter("clave");
         
         Autenticacion aut = new Autenticacion();
         
-        if(aut.autenticacion(usuario, contraseña)){
+        if(aut.autenticacion(usuario, clave)){
             response.sendRedirect("categorias.jsp");
         }else{
             response.sendRedirect("index.jsp");
