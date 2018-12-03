@@ -41,7 +41,7 @@ public class IniciarSesion extends HttpServlet {
         if(aut.autenticacion(usuario, clave)){
             response.sendRedirect("categorias.jsp");
         }else{
-            response.sendRedirect("categorias.jsp");
+            response.sendRedirect("tematicas.jsp");
         }
         
         
