@@ -16,7 +16,26 @@ public class Persona {
     private String Apellido;
     private String Profesion;
     private String Departamento;
+    private String Usuario;
+    private String Clave;
 
+    public String getUsuario() {
+        return Usuario;
+    }
+
+    public void setUsuario(String Usuario) {
+        this.Usuario = Usuario;
+    }
+
+    public String getClave() {
+        return Clave;
+    }
+
+    public void setClave(String Clave) {
+        this.Clave = Clave;
+    }
+    
+    
     public String getDepartamento() {
         return Departamento;
     }

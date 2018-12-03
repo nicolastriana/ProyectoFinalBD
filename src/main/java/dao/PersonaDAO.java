@@ -34,6 +34,8 @@ public class PersonaDAO implements IBaseDatos<Persona>{
             String apellido = null;
             String profesion = null;
             String departamento = null;
+            String usuario = null;
+            String clave = null;
 	    if (rs.next()){
                 resultado = new Persona();
 	        id_persona = rs.getInt("id_persona");
@@ -46,6 +48,10 @@ public class PersonaDAO implements IBaseDatos<Persona>{
                 resultado.setProfesion(profesion);
                 departamento = rs.getString("departamento");
                 resultado.setDepartamento(departamento);
+                usuario = rs.getString("usuario");
+                resultado.setUsuario(usuario);
+                clave = rs.getString("clave");
+                resultado.setClave(clave);
 	    }
 	    st.close();
 	    } catch (SQLException e) {
@@ -68,6 +74,8 @@ public class PersonaDAO implements IBaseDatos<Persona>{
             String apellido = null;
             String profesion = null;
             String departamento = null;
+            String usuario = null;
+            String clave = null;
 	    while (rs.next()){
 	    	if(personas == null){
                     personas = new ArrayList<Persona>();
@@ -83,6 +91,10 @@ public class PersonaDAO implements IBaseDatos<Persona>{
                 registro.setProfesion(profesion);
                 departamento = rs.getString("departamento");
                 registro.setDepartamento(departamento);
+                usuario = rs.getString("usuario");
+                registro.setUsuario(usuario);
+                clave = rs.getString("clave");
+                registro.setClave(clave);
                 personas.add(registro);
 	    }
 	    st.close();
@@ -99,7 +111,7 @@ public class PersonaDAO implements IBaseDatos<Persona>{
     public boolean insert(Persona persona) throws SQLException {
         boolean result = false;
 	Connection connection = Conexion.getConnection();
-        String query = " insert into Persona" + " values (?,?,?,?,?)";
+        String query = " insert into Persona" + " values (?,?,?,?,?,?,?)";
         PreparedStatement preparedStmt = null;
         try {
             preparedStmt = connection.prepareStatement(query);
@@ -108,6 +120,8 @@ public class PersonaDAO implements IBaseDatos<Persona>{
             preparedStmt.setString(3, persona.getApellido());
             preparedStmt.setString(4, persona.getProfesion());       
             preparedStmt.setString(5, persona.getDepartamento());       
+            preparedStmt.setString(6, persona.getUsuario());       
+            preparedStmt.setString(7, persona.getClave());       
 	    result= preparedStmt.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -119,16 +133,18 @@ public class PersonaDAO implements IBaseDatos<Persona>{
     public boolean update(Persona persona) throws SQLException {
         boolean result = false; 
 	Connection connection = Conexion.getConnection();
-	String query = "update Persona set Nombre = ?, Apellido = ?, Profesion = ?, Departamento = ?"
-                + " where IDPersona = ?";
+	String query = "update Persona set Nombre = ?, Apellido = ?, Profesion = ?, Departamento = ?, "
+                + "Usuario = ?, Clave = ? where IDPersona = ?";
 	PreparedStatement preparedStmt=null;
 	try {
 	    preparedStmt = connection.prepareStatement(query);
 	    preparedStmt.setString(1, persona.getNombre());
             preparedStmt.setString(2, persona.getApellido());
             preparedStmt.setString(3, persona.getProfesion());          
-            preparedStmt.setString(3, persona.getDepartamento());          
-            preparedStmt.setInt(4, persona.getIDPersona()); 
+            preparedStmt.setString(4, persona.getDepartamento());          
+            preparedStmt.setString(5, persona.getUsuario());          
+            preparedStmt.setString(6, persona.getClave());          
+            preparedStmt.setInt(7, persona.getIDPersona()); 
                     
 	    if (preparedStmt.executeUpdate() > 0){
 	   	result=true;

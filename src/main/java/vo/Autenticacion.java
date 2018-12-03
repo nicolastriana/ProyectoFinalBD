@@ -5,6 +5,7 @@
  */
 package vo;
 
+import conexion.Conexion;
 import conexion.Conexion2;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,7 +15,7 @@ import vo.Persona;
  *
  * @author Nicolas Triana
  */
-public class Autenticacion extends Conexion2{
+public class Autenticacion extends Conexion{
     
     public boolean autenticacion(String usuario, String pass){
         
@@ -23,7 +24,7 @@ public class Autenticacion extends Conexion2{
         
         try {
             String consulta = "select * from autentitacion where usuario = ? and pass = ?";
-            pst = getConexion().prepareStatement(consulta);
+            pst = getConnection().prepareStatement(consulta);
             pst.setString(1, usuario);
             pst.setString(2, pass);
             rs = pst.executeQuery();
@@ -36,8 +37,8 @@ public class Autenticacion extends Conexion2{
             System.err.println("Error" + e);
         } finally{
             try {
-                if(getConexion() != null)
-                    getConexion().close();
+                if(getConnection() != null)
+                    getConnection().close();
                 if(pst != null)
                     pst.close();
                 if(rs != null)
