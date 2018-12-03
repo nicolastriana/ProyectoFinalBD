@@ -32,7 +32,7 @@ public class Conexion {
 			   }
 
 			  try {
-			    CONEXION = DriverManager.getConnection("jdbc:mysql://localhost:3306/atg_db","root", "root");
+			    CONEXION = DriverManager.getConnection("jdbc:mysql://localhost:3306/atg_db","root", "");
      			  } catch (SQLException e) {
 			     throw new SQLException(e);
 			  }
